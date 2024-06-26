@@ -1,0 +1,11 @@
+/* index.css */
+
+body {
+    background-color:grey;
+  }
+  
+  .js-time {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+  }

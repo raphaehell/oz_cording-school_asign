@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X_UA-compatible" content="IE=dege">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 메소드 및 속성</title>
+</head>
+<body>
+<h1 id="song-title" class="heading"
+title="ak47">
+    <span> ak47</span>
+
+</h1>
+<p class="lyrics">
+우리 동네는 밤마다 들려 총성
+</p>
+<p class="lyrics"></p>
+    why you scared 나는 이렇게 컷어
+</p>
+
+<script>
+console.log(document.querySelectorAll(".lyrics"))
+        
+console.log(document.getElementsByClassName("lyrics"))
+
+document.getElementsByClassName("lyrics")
+
+const title = document.getElementById("song-title")
+console.log(title)
+
+consle.log(title.textContent)
+consle.log(title.innerText)
+console.log(title.className)
+console.log(title.style)
+console.log(title.title)
+
+</script>
+</body>
+</html>

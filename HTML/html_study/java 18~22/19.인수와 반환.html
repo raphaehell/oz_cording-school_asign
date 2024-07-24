@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X_UA-compatible" content="IE=dege">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 인수와 변환</title>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    <script>
+        createparagraph("안녕", "red")
+        createparagraph("친구들?", "blue")
+        createparagraph("빡빡이 이저씨야!", "green")
+
+
+        function createparagraph(content, color){
+        const p = document.createElement("p")
+        p.style.color = color
+        p.textContent = content
+        document.querySelector("#container").append(p)
+      
+    
+            return '나를 봐 빡빡이: ${content},색상:${color}'
+    
+    
+    
+    }
+    
+
+
+
+    </script>
+</body>
+</html>

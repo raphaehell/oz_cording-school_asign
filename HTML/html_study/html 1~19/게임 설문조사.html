@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible"content="IE=edge">
+        <title>게임 선호도 조사</title>
+</head>
+<body>
+    <header>
+        <h1>설문조사 양식</h1>
+        <p>모든 항목에 빠짐없이 체크해주세요</p>
+    </header>
+    <hr>
+<main>
+    <form>
+    <fieldset>
+        <legend>개인정보</legend>
+        <label for="name">이름</label>
+        <input type='text'
+         name="name"
+         id="name" placeholder="본명을 입력하세요">
+        <br>
+        <label for="email">이메일</label>
+        <input type='email' 
+        name="email"
+        id="name" placeholder="메일 주소 쓰세요">
+    </fieldset>
+    <fieldset>
+        <legend>설문</legend>
+        <p>연령대가 어떻게 되십니까?</p>
+        <input type="radio" id="teen" name="age">
+        <label for="teen">10대</label>
+        <input type="radio" id="twenty" name="age">
+        <label for="twenty">20대</label>
+        <input type="radio" id="thirty" name="age">
+        <label for="thirty">30대</label>
+        <input type="radio" id="fourty" name="age">
+        <label for="fourty">40대</label>
+        <input type="radio" id="fifty" name="age">
+        <label for="fifty">50대</label>
+        <input type="radio" id="other" name="age">
+        <label for="fifty">그 외</label>
+        <p>게임을 고르실때 어떤 게임을 주로 고르시나요?</p>
+        <input type="checkbox" id="position" name="academy">
+        <label for="position">몰입감 있는 스토리가 있는 게임</label>
+        <input type="checkbox" id="price" name="academy">
+        <label for="price">내가 이전에 플레이 했던 게임의 후속작</label>
+        <input type="checkbox" id="teacher" name="academy">
+        <label for="teacher">주변 사람들이 많이 하는게임 위주</label>
+        <input type="checkbox" id="infra" name="academy">
+        <label for="infra">인디 게임</label>
+        <input type="checkbox" id="infra" name="academy">
+        <label for="infra">기타</label>
+
+   
+    <fieldset> 
+        <legend>기타의견</legend>
+        <textarea rows="3" cols="30" name="comment"></textarea>
+    </fieldset>
+    <input type="submit">
+    </form>
+</main>
+    <hr>
+<footer>
+    <p>입력하느라 수고하셨습니다.</p>
+</footer> 
+    </body>
+    </html>

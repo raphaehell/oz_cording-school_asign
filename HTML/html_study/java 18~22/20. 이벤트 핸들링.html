@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X_UA-compatible" content="IE=dege">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 핸들러</title>
+</head>
+<body>
+
+    <button id="span">span</button>
+    <button id="strong">strong</button>
+    <button id="mark">mark</button>
+
+
+
+    <script>
+    const spanbtn = document.getElementById("span")
+    const strongbtn = document.getElementById("strong")
+    const markbtn = document.getElementById("mark")
+
+    const handleclick = function(event){
+
+        const span = document.createElement("span")
+        span.textContent = "새로 생긴 span 태그입니다"
+        document.body.append(span)
+
+        if(event.target.id == "span"){
+            const spanbtn = document.createElement("span")
+            span.textContent = "span 태그"
+            document.body.append(span)
+        }else if(event.target.id =="strong"){
+            const strongnbtn = document.createElement("strong")
+            span.textContent = "strong 태그"
+            document.body.append(strong)
+        }else if(event.target.id =="mark"){
+            const markbtn = document.createElement("mark")
+            span.textContent = "mark 태그"
+            document.body.append(mark)
+
+    }
+    }
+    spanbtn.addEventListener("click",handleclick )
+    strongbtn.addEventListener("click",handleclick )
+    markbtn.addEventListener("click",handleclick )
+
+
+    </script>
+</body>
+</html>

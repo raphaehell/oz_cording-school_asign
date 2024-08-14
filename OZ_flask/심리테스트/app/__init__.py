@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_migrate import Migrate
+from flask_migrate import Migrate 
 from flask.cli import with_appcontext
 import os
 import click

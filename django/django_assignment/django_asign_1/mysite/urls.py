@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
 from django.shortcuts import render
-from fake_db import user_db
+from mysite.fake_db import user_db # 혹시 서로 헷갈릴 수 있으니 따로 짜는게 좋다( 장고 따로 파이썬 따로)
 
 def index(request):
     return HttpResponse('<h1>hello</h1>')

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #own apps
     'blog',
+    'member',
 ]
 THIRD_PARTY_APPS = [
     'django_extensions',
@@ -130,4 +131,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #login
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/blog/'
+LOGIN_URL = '/login/'
+LOGOUT_REDIRECT_URL = '/blog/'

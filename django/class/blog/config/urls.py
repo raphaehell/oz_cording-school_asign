@@ -14,6 +14,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from enum import member
+
 from django.contrib import admin
 from django.urls import include, path
 
@@ -26,7 +28,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', views.blog_list,name='blog_list'),
     path('blog/<int:pk>/', views.blog_detail,name='blog_detail'),
+    path('create/', views.blog_create,name='blog_create'),
+
+    #auth
     path('accounts/', include("django.contrib.auth.urls")),
 
     path('signup/',member_views.sign_up, name='signup'),
+    path('login',member_views.login, name='login'),
 ]

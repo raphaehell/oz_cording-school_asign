@@ -10,6 +10,7 @@ python = "^3.12"
 ipython = "^8.26.0"
 django-extensions = "^3.2.3"
 django = "^5.1"
+django-summernote = "^0.8.20.0"
 
 
 [build-system]
